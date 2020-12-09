@@ -3,8 +3,10 @@ Currently learning
 >JS
 >node
 >React
+>MongoDB
 
 Things I know
 >HTML
 > CSS
 > Bootstrap
+
