@@ -1,6 +1,6 @@
 Things I'm learning in Web Dev are here
 Currently learning
->JS
+>Js
 >node
 >React
 >MongoDB
