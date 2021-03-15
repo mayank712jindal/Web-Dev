@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat';
+}
+.container-fluid{
+    background-color:#232F3E;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
+.heading{
+    font-size: 1.5rem;   
+}
+.color-pallete{
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 0px 2px;
+    border:none;
+}
+img{
+    border: 1px solid black;
+    width: 100%;
+}
+.watch-face{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: orange;
+}
