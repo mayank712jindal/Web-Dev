@@ -21,6 +21,9 @@ body{
     margin: 0px 2px;
     border:none;
 }
+.row{
+    margin: 0 !important;;
+}
 img{
     border: 1px solid black;
     width: 100%;
