@@ -1,0 +1,14 @@
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#count{
+    font-size: 3rem;
+    color: white;
+}
+div{
+    text-align: center;
+}
+body{
+    background-color: skyblue;
+}
