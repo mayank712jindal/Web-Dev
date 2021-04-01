@@ -8,15 +8,18 @@
         <link rel="stylesheet" href="./css/toDoList.css">
     </head>
     <body>
-
+            <div class="container">
+                <h1>ToDo List</h1>
             <input name="list-item" id="listText" type="text" placeholder="Enter your item here" /><br>
-            <button class="btn-primary" id="add-item" onclick="Add()">Add to list</button>
-            <button class="btn-primary" id="remove-item">Remove last item</button>
+            <p id="message"></p>
+            <center>
+            <button class="btn-primary" id="add-item">Add to list</button>
+            <button class="btn-primary" id="remove-item">Clear list</button>
+        </center>
+            <div id="list-items">
 
-            <ol id="list" type="none">
-
-            </ol>
-
+            </div>
+            </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

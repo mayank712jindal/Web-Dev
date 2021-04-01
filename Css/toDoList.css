@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+#listText{
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    outline: none;
+}
+#add-item,#remove-item{
+    height: 50px;
+    padding: 10px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+#list-items p{
+    position: relative;
+    background-color:lightcyan;
+    /* width: 100%; */
+    height: 50px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+#list-items p span img{
+    /* display: inline; */
+    position: absolute;
+   /* float: right; */
+   padding: 5px;
+   right: 10px;
+   top:5px;
+   height: 40px;
+}
+.marked{
+    background-color:darkcyan !important;
+    text-decoration: line-through;
+}
