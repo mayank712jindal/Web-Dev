@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <!-- Styles  -->
+        <link rel="stylesheet" href="./css/calculator.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="calculator">
+                <table>
+                    <tr>
+                        <td colspan="4"><input type="text" name="textScreen" id="display" ></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-light symbol" id="add">+</button></td>
+                        <td><button class="btn-light symbol" id="minus">-</button></td>
+                        <td><button class="btn-light symbol" id="multiply">*</button></td>
+                        <td><button class="btn-light symbol" id="divide">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-light number">7</button></td>
+                        <td><button class="btn-light number">8</button></td>
+                        <td><button class="btn-light number">9</button></td>
+                        <td rowspan="3"><button class="btn-light" id="equal">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-light number">4</button></td>
+                        <td><button class="btn-light number">5</button></td>
+                        <td><button class="btn-light number">6</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-light number">1</button></td>
+                        <td><button class="btn-light number">2</button></td>
+                        <td><button class="btn-light number">3</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-light number">0</button></td>
+                        <td><button class="btn-light symbol" style="background-color:#f7f7f7;color: black;">.</button></td>
+                        <td><button class="btn-light" id="backspace">C</button></td>
+                        <td><button class="btn-light" id="clear">AC</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./Js/calculator.js"></script>
+    </body>
+</html>

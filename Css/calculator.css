@@ -1,0 +1,24 @@
+table{
+    border: 1px solid black;
+}
+button{
+    height: 60px;
+    width: 80px;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+#equal{
+    height: 220px;
+}
+#display{
+    margin: 10px;
+    width: 390px;
+    height: 80px;
+    text-align: right;
+    font-size: 2rem;
+    border: #fd7e14 solid 0.5px;
+}
+.symbol{
+    background-color:#fd7e14;   
+    color: white;
+}
