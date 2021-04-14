@@ -11,14 +11,16 @@
             <div class="container">
                 <h1>ToDo List</h1>
             <input name="list-item" id="listText" type="text" placeholder="Enter your item here" /><br>
+            <input name="list-search" id="listSearch" type="text" placeholder="Search your item here" oninput="listSearch()" /><br>
             <p id="message"></p>
             <center>
             <button class="btn-primary" id="add-item">Add to list</button>
             <button class="btn-primary" id="remove-item">Clear list</button>
+            <button class="btn-primary" id="dynamic-item">Add dynamic </button>
         </center>
-            <div id="list-items">
+            <ul id="list-items" type=none>
 
-            </div>
+            </ul>
             </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
