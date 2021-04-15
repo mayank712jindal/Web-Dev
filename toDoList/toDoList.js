@@ -39,6 +39,7 @@ dynamicBtn.addEventListener("click",function(){
 //function that add list item 
 function addListItem(text){
     var newListELement = document.createElement('li');
+    newListELement.className="listElements"
     var spanTag=document.createElement('span');
     var deleteImg=document.createElement('img');
     deleteImg.src="https://img.icons8.com/ios/50/000000/delete-forever--v1.png";
@@ -57,7 +58,7 @@ removeBtn.addEventListener("click",function(){
 
 //to particularly delete a list item
 document.addEventListener("click",function(e){
-    if(e.target && e.target.className== 'delete'){
+    if(e.target.className== 'delete'){
         var li= e.target;
         var p1=li.parentNode;
         var p2=p1.parentNode;
@@ -80,6 +81,29 @@ function getTODOlist(){
     http.send();
 }
 
+//function that search for particular list value
 function listSearch(event){
-    console.log(event.target);
+    var searchText=event.target.value;
+    var texts=document.getElementsByTagName("li");
+    for(x in texts){
+        var list_text= texts[x].innerText;
+        if(list_text.indexOf(searchText)==0){
+        texts[x].style.display= "block";
+        }
+        else
+        texts[x].style.display="none";
+    }
 }
+
+//dblclick event attached to list items to mark them
+document.addEventListener("dblclick",function(e){
+    if(e.target && (e.target.className== 'listElements' || e.target.className=="listElements marked"))
+    e.target.classList.toggle("marked");
+});
+
+//enter key is enabled to enter text in the list
+document.addEventListener("keypress",function(e){
+    let list_text=document.getElementById("listText").value;
+    if(e.keyCode==13 && list_text.length>0)
+    addListItem(list_text);
+});
