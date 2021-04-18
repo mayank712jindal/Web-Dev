@@ -24,11 +24,13 @@ var addBtn= document.getElementById("add-item");
 var removeBtn=  document.getElementById("remove-item");
 var dynamicBtn= document.getElementById("dynamic-item");
 var deleteBtn= document.getElementsByClassName("delete");
+var counter= document.getElementById("count");
 
 // add button to add list item
 addBtn.addEventListener('click',function(){
     var text= document.getElementById("listText").value;
     addListItem(text);
+    counter.innerText=$("li").length;
 });
 
 //dynammic button to fetch list from api
@@ -38,22 +40,28 @@ dynamicBtn.addEventListener("click",function(){
 
 //function that add list item 
 function addListItem(text){
-    var newListELement = document.createElement('li');
-    newListELement.className="listElements"
-    var spanTag=document.createElement('span');
-    var deleteImg=document.createElement('img');
-    deleteImg.src="https://img.icons8.com/ios/50/000000/delete-forever--v1.png";
-    deleteImg.className="delete";
-    spanTag.appendChild(deleteImg);
-    newListELement.appendChild(document.createTextNode(text));
-    newListELement.appendChild(spanTag);
-    list.appendChild(newListELement);
+    if(text.length===0){
+        alert("Please enter some text");
+    }
+    else{
+        var newListELement = document.createElement('li');
+        newListELement.className="listElements"
+        var spanTag=document.createElement('span');
+        var deleteImg=document.createElement('img');
+        deleteImg.src="https://img.icons8.com/ios/50/000000/delete-forever--v1.png";
+        deleteImg.className="delete";
+        spanTag.appendChild(deleteImg);
+        newListELement.appendChild(document.createTextNode(text));
+        newListELement.appendChild(spanTag);
+        list.appendChild(newListELement);
+    }
 }
 
 //the clear all list button
 removeBtn.addEventListener("click",function(){
     while(list.firstChild)
     list.removeChild(list.lastChild);
+    counter.innerText=$("li").length;
 });
 
 //to particularly delete a list item
@@ -64,6 +72,7 @@ document.addEventListener("click",function(e){
         var p2=p1.parentNode;
         p2.parentNode.removeChild(p2);
     }
+    counter.innerText=$("li").length;
 });
 
 //function to dynamically fetch list items
@@ -103,7 +112,12 @@ document.addEventListener("dblclick",function(e){
 
 //enter key is enabled to enter text in the list
 document.addEventListener("keypress",function(e){
-    let list_text=document.getElementById("listText").value;
-    if(e.keyCode==13 && list_text.length>0)
-    addListItem(list_text);
+    let text= document.getElementById("listText").value;
+    if(e.keyCode==13){
+        if(text.length>0)
+             addListItem(text);
+        else
+             alert("Please enter some text");
+    }
+    counter.innerText=$("li").length;
 });
