@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.6;
+}
+
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
+.jumbotron h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.jumbotron h4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.jumbotron p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-radius: 0;
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-color-hover);
+}
+.sec1 img {
+  height: 40rem !important;
+  width: 60rem !important;
+  border-radius: 2%;
+}
+.sec2 img {
+  height: 20rem !important;
+  width: 60rem !important;
+  border-radius: 2%;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer ul li {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 999px) {
+  .sec1 img {
+    height: 20rem !important;
+    width: 30rem !important;
+  }
+  .sec2 img {
+    height: 10rem !important;
+    width: 30rem !important;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .sec1 img {
+    height: 10rem !important;
+    width: 15rem !important;
+  }
+  .sec2 img {
+    height: 7rem !important;
+    width: 15rem !important;
+  }
+  .sec4 img {
+    height: 10rem !important;
+    width: 15rem !important;
+  }
+  .jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .jumbotron h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .jumbotron p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .sec1 h1 {
+    font-size: 1.5rem !important;
+  }
+}
