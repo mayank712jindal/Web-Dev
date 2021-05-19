@@ -1,5 +1,5 @@
 let langId = 4;
-
+let codeID;
 $(".submit").on("click", () => {
     let sampleCode = $("#codeArea").val();
 
@@ -19,7 +19,18 @@ function sendData(sampleCode) {
             langId: `${langId}`
         },
         (data, status) => {
-            alert(`Data= ${data} and Status= ${status} `)
+            codeID = data.codeId;
+            setTimeout(displayData, 8000)
         }
     )
+
+    function displayData() {
+        $.get(`https://codequotient.com/api/codeResult/:${codeID}`,
+            response => {
+                if (Object.entries(response.data).length === 0)
+                    $(".output").text("Value not recieved");
+                else
+                    $(".output").text(response.data.output);
+            })
+    }
 }
