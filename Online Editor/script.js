@@ -12,6 +12,8 @@ $("#lang").change(() => {
     langId = element;
 });
 
+// forboth get and post request the url used is CodeQuotient.
+// can't use on localhost
 function sendData(sampleCode) {
     $.post(`https://codequotient.com/api/executeCode`,
         {
