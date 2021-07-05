@@ -10,3 +10,4 @@ Things I know
 > Reactjs
 > PHP mySql
 > ejs
+> Wordpress
