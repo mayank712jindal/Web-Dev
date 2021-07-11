@@ -12,3 +12,4 @@ Things I know
 > ejs
 > Wordpress
 > Java
+> C
