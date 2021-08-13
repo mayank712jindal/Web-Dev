@@ -1,4 +1,4 @@
-Things I'm learning in Web Dev are here
+<!-- Things I'm learning in Web Dev are here
 Currently learning
 >MongoDB
 
@@ -12,4 +12,6 @@ Things I know
 > ejs
 > Wordpress
 > Java
-> C
+> C -->
+
+Web Projects
